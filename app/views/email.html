@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-color: #eee;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI",Arial,sans-serif;
+        }
+        
+        h3 {
+            color: crimson;  
+        }
+        .main {
+            width: 300px;
+            min-height: 200px;
+            margin: auto;
+            margin-top: 200px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 50px;
+        }
+        .form {
+            width: calc( 100% - 20px );
+            padding :10px;
+            margin-bottom: 5px;
+        }
+        .btn {
+            width: 100%;
+            background-color: #D95459;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #C9302C;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form method="post" action=" {{ href }} ">
+            <h2>ENTER NEW PASSWORD</h2>
+            <h3>{{ message }}</h3>
+            <input class="form" type="password" placeholder="Enter New Password" name="newPassword" required>
+            <input class="form" type="password" placeholder="Retype New Password" name="reNewPassword" required>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
